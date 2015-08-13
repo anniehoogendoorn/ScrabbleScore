@@ -7,7 +7,7 @@
              and stores it.*/
             $word_as_array = str_split(strtolower($user_input));
             $output = 0;
-        
+
             // Associative array for scores
             $point_array =
             [
@@ -55,15 +55,6 @@
 
             /*Return the total score*/
             return $output;
-
-
-
-
-
-
-
-
-
 
         }
 

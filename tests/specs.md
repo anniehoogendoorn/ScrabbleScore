@@ -5,7 +5,7 @@ What?: Testing if one letter can be processed
 
 2)
 What?: Testing each score value
-    Input: k
+    Input: "k"
     Output: 5
 
 3)
@@ -21,3 +21,4 @@ What: Handles case sensitivity.
 5) What?: Handle mix character.
     Input: "c!!?a@#$t"
     Output: 5
+    
