@@ -29,6 +29,19 @@
             //Assert
             $this->assertEquals(5, $result);
         }
+
+        function test_scrabble_word()
+        {
+            //Arrange
+            $test_word = new Scrabble;
+            $user_input = "cat";
+
+            //Act
+            $result = $test_word->scoreCal($user_input);
+
+            //Assert
+            $this->assertEquals(5, $result);
+        }
     }
 
 ?>

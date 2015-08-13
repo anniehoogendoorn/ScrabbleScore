@@ -3,6 +3,8 @@
     {
         function scoreCal($user_input)
         {
+            $word_as_array = str_split($user_input);
+            $output = 0;
             $point_array =
             [
                 "a" => 1,
@@ -33,10 +35,19 @@
                 "z" => 10
             ];
 
-            if(array_key_exists($user_input, $point_array))
+            foreach ($word_as_array as $letter)
             {
-                return $point_array[$user_input];
+
+
+                if(array_key_exists($letter, $point_array))
+                {
+
+                    $output += $point_array[$letter];
+
+                }
             }
+
+            return $output;
 
 
 
