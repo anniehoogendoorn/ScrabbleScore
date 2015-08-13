@@ -3,8 +3,12 @@
     {
         function scoreCal($user_input)
         {
+            /* Lowercases user string then splits it into an array
+             and stores it.*/
             $word_as_array = str_split(strtolower($user_input));
             $output = 0;
+        
+            // Associative array for scores
             $point_array =
             [
                 "a" => 1,
@@ -35,10 +39,12 @@
                 "z" => 10
             ];
 
+            //Go through each character user array
             foreach ($word_as_array as $letter)
             {
 
-
+                /* if the character exists in thre point array we then store
+                 the value in output */
                 if(array_key_exists($letter, $point_array))
                 {
 
@@ -47,6 +53,7 @@
                 }
             }
 
+            /*Return the total score*/
             return $output;
 
 

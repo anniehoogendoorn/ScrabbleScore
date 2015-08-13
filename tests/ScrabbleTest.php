@@ -55,6 +55,20 @@
             //Assert
             $this->assertEquals(5, $result);
         }
+
+
+        function test_mix_character()
+        {
+            //Arrange
+            $test_case = new Scrabble;
+            $user_input = "c!@#a%$#t";
+
+            //Act
+            $result = $test_case->scoreCal($user_input);
+
+            //Assert
+            $this->assertEquals(5, $result);
+        }
     }
 
 ?>
