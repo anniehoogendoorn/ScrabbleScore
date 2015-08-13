@@ -3,7 +3,7 @@
     {
         function scoreCal($user_input)
         {
-            $word_as_array = str_split($user_input);
+            $word_as_array = str_split(strtolower($user_input));
             $output = 0;
             $point_array =
             [
