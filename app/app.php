@@ -12,7 +12,7 @@
     // Home twig link
     $app->get("/", function() use ($app))
     {
-        return $app['twig']->render('index.htm.twig');
+        return $app['twig']->render('index.html.twig'); 
     }
 
     return $app;
