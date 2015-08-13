@@ -1,17 +1,21 @@
 <html>
     <head>
         <title>Scrabble Score</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link href="css/custom.css" rel='stylesheet' type="text/css">
     </head>
     <body>
-        <h1>Scrabble Score!</h1>
-        <h2>Please input your word</h2>
+        <div class="container">
+            <h1>Scrabble Score!</h1>
+            <h2>Please input your word</h2>
 
-        <form id="form1" action="" method="post">
-            <div class="form-group">
-                <label for="input">Word:</label>
-                <input type="text" class="form-control" name="input" id="input">
-            </div>
-            <button type="Submit" class="btn-success"></button>
-        </form>
+            <form action="/results" method="post">
+                <div class="form-group">
+                    <label for="input">Word:</label>
+                    <input type="text" class="form-control" name="input" id="input">
+                </div>
+                <button type="Submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
     </body>
 </html>

@@ -15,5 +15,11 @@
         return $app['twig']->render('index.html.twig');
     });
 
+    $app->post("/results", function() use ($app) {
+        $new_Scrabble = new Scrabble;
+        $results = $new_Scrabble->scoreCal($_GET['input']);
+        return $app['twig']->render('results.html.twig', array('result' => $results));    
+    });
+
     return $app;
 ?>
