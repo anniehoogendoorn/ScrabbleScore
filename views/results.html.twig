@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Scrabble Score</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link href="css/custom.css" rel='stylesheet' type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Scrabble Score!</h1>
+
+            {% if result is not empty %}
+            <h2>Your score is!</h2>
+            <h3>{{ result }}</h3>
+            {% endif %}
+
+            <a href="/"><button class="btn btn-default">Home</button></a>
+
+        </div>
+    </body>
+</html>

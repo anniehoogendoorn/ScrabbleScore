@@ -7,12 +7,11 @@
     <body>
         <div class="container">
             <h1>Scrabble Score!</h1>
-            <h2>Please input your word</h2>
 
             <form action="/results" method="post">
                 <div class="form-group">
-                    <label for="input">Word:</label>
-                    <input type="text" class="form-control" name="input" id="input">
+                    <label for="input">Please input your word:</label>
+                    <input type="text" class="form-control" name="input" id="input" required>
                 </div>
                 <button type="Submit" class="btn btn-default">Submit</button>
             </form>

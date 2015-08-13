@@ -17,8 +17,8 @@
 
     $app->post("/results", function() use ($app) {
         $new_Scrabble = new Scrabble;
-        $results = $new_Scrabble->scoreCal($_GET['input']);
-        return $app['twig']->render('results.html.twig', array('result' => $results));    
+        $results = $new_Scrabble->scoreCal($_POST['input']);
+        return $app['twig']->render('results.html.twig', array('result' => $results));
     });
 
     return $app;
